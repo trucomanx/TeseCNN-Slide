@@ -1,0 +1,68 @@
+
+\documentclass{beamer} %
+\usetheme{CambridgeUS}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+
+\usefonttheme{professionalfonts}
+\usepackage{times}
+\usepackage{tikz}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+
+\usepackage{verbatim}
+\usetikzlibrary{arrows,shapes}
+
+\usepackage{comment} % for enable comment enviroment
+
+\usepackage{amsmath} % for the equation* environment
+\usepackage{amssymb}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Tabela de conteúdos}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+
+\usepackage[backend=bibtex, style=authoryear]{biblatex}
+\addbibresource{bibliografia.bib}
+
+\author{Fernando Pujaico Rivera}
+\title{Classificação da linguagem corporal de pacientes no leito utilizando aprendizado profundo}
+\date{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\frame{\titlepage
+
+
+{
+\vspace{20px}
+\raggedright
+Doutorado em Engenharia Elétrica\\
+Orientador: Prof. Paulo Sergio Silva Rodrigues
+}
+}
+
+
+\input{section/intro}
+\input{section/artstate}
+\input{section/fundamento}
+\input{section/metodologia}
+\input{section/proposta-experimental}
+%\input{section/legacy}
+
+\frame[allowframebreaks]{  
+    \frametitle{Bibliografia}
+    \printbibliography
+}
+
+\end{document}
